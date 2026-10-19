@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cấu trúc câu cơ bản tiếng Anh</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e3123;--bg2:#154d35;--card:#f6fbe8;--ink:#123524;--mute:#4f6f5a;--line:#d3e6bb;--gold:#f6e46a;--S:#3fa34d;--V:#2f93d1;--O:#ef9a2c;--O1:#ef9a2c;--O2:#d9741b;--C:#e5588a;--A:#8c6fe0;--ok:#2a9a58;--okb:#dcf3df;--no:#d6455f;--nob:#ffe3e8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:linear-gradient(180deg,#0e3123,#154d35 40%,#0e3123);color:#e8f6d8;font:400 16px/1.75 "Be Vietnam Pro",system-ui,sans-serif;overflow-x:hidden}
+#top{position:fixed;top:0;left:0;right:0;z-index:60;padding:calc(8px + env(safe-area-inset-top,0px)) 14px 8px;background:#0e3123ee;backdrop-filter:blur(8px);border-bottom:1px solid #3fa34d66;transform:translateY(-110%);transition:transform .4s}
+#top.on{transform:none}
+.tb{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:12px;font:600 14px "Be Vietnam Pro";color:#fff}
+.pg{flex:1;height:10px;border-radius:10px;background:#ffffff26;overflow:hidden}
+.pg i{display:block;height:100%;width:0;border-radius:10px;background:linear-gradient(90deg,#8ae04a,var(--gold));transition:width .5s}
+.tb span{white-space:nowrap}.tb .o{color:#8be0a0}.tb .w{color:#ff9db0}
+#snd{border:0;background:none;font-size:20px;cursor:pointer}
+/* hero */
+header{position:relative;height:100vh;min-height:620px;overflow:hidden;text-align:center;background:radial-gradient(ellipse at 15% 0,#f6f08a 0,#9ad44a 25%,#2f8a45 55%,#0f4a32 100%)}
+.rays{position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 60px,#ffffff1c 60px 110px,transparent 110px 210px);-webkit-mask:linear-gradient(135deg,#000,transparent 60%);mask:linear-gradient(135deg,#000,transparent 60%);animation:sw 8s ease-in-out infinite alternate}
+@keyframes sw{to{transform:translateX(40px)}}
+.leaf{position:absolute;top:-20px;width:min(600px,90vw);animation:lf 7s ease-in-out infinite alternate;transform-origin:top left}
+@keyframes lf{to{transform:rotate(2deg)}}
+.hc{position:absolute;top:13vh;left:0;right:0;z-index:6;padding:0 18px}
+.hc small{display:block;font:600 13px "Be Vietnam Pro";letter-spacing:3px;color:#fff;text-shadow:0 2px 8px #0a3a1a99}
+h1{font:800 clamp(38px,9vw,78px)/1.05 "Be Vietnam Pro";color:#fff;letter-spacing:-1px;text-shadow:0 4px 0 #1f6b3a,0 0 40px #f6e46a88}
+.scr{font:600 clamp(28px,6vw,52px) "Dancing Script",cursive;color:var(--gold);text-shadow:0 2px 12px #0a3a1a}
+.sub{max-width:540px;margin:6px auto 16px;color:#f4ffe0;text-shadow:0 1px 8px #0a3a1a}
+.go{border:0;background:var(--gold);color:#123524;font:800 16px "Be Vietnam Pro";padding:11px 28px;border-radius:30px;cursor:pointer;box-shadow:0 8px 24px #0a3a1a77;transition:.25s}
+.go:hover{transform:translateY(-3px) scale(1.05)}
+.home{position:absolute;left:50%;bottom:0;width:min(420px,88vw);transform:translateX(-50%);z-index:3}
+.win{animation:gl 3s ease-in-out infinite alternate}
+@keyframes gl{to{opacity:.75}}
+.bf{position:absolute;left:12%;top:30%;width:40px;z-index:5;animation:fly 12s ease-in-out infinite alternate}
+@keyframes fly{to{transform:translate(60vw,40px) rotate(10deg)}}
+.bf path{transform-origin:20px 20px;animation:fl .35s ease-in-out infinite alternate}
+@keyframes fl{to{transform:scaleX(.5)}}
+#ff{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none}
+/* sections */
+.wrap{max-width:900px;margin:0 auto;padding:0 18px 140px}
+.sec{padding:80px 0 0}
+.eb{display:inline-block;background:var(--gold);color:#123524;font:800 12px "Be Vietnam Pro";letter-spacing:1.5px;padding:2px 14px;border-radius:20px;margin-bottom:8px}
+h2{font:800 clamp(26px,5vw,42px)/1.15 "Be Vietnam Pro";color:#fff;letter-spacing:-1px;margin-bottom:6px;text-shadow:0 2px 14px #8ae04a55}
+.lead{color:#cfe9b8;margin-bottom:20px}
+.rv{opacity:0;transform:translateY(36px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.on{opacity:1;transform:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--card);color:var(--ink);border-radius:26px;padding:22px 24px;box-shadow:0 14px 36px #0006;position:relative;overflow:hidden;transition:transform .3s}
+.card:hover{transform:translateY(-6px)}
+.card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:var(--c,var(--S))}
+.card h3{font:800 20px/1.3 "Be Vietnam Pro";margin-bottom:4px}
+.tag{display:inline-block;background:var(--c,var(--S));color:#fff;font:800 14px "Be Vietnam Pro";padding:0 14px;border-radius:20px;margin-right:6px}
+.mu{color:var(--mute);font-size:14.5px}
+.ex{margin-top:10px;padding:8px 12px;background:#fff;border-radius:14px;border:1.5px solid var(--line);font-size:15.5px}
+.ch{display:inline-block;padding:0 9px;margin:2px 2px;border-radius:10px;color:#fff;font-weight:600;position:relative}
+.ch sub{font:800 9px "Be Vietnam Pro";position:absolute;left:50%;transform:translateX(-50%);bottom:-8px;color:inherit;opacity:0}
+.S{background:var(--S)}.V{background:var(--V)}.O{background:var(--O)}.O1{background:var(--O1)}.O2{background:var(--O2)}.C{background:var(--C)}.A{background:var(--A)}
+.n{display:flex;gap:14px;align-items:center;margin-bottom:8px}
+.n b.num{flex:none;width:44px;height:44px;border-radius:50%;background:var(--gold);color:#123524;display:grid;place-items:center;font:800 20px "Be Vietnam Pro"}
+.vt{font-size:14.5px;color:var(--mute);margin-top:4px}
+.vt b{color:var(--ink)}
+/* explorer */
+.xp{background:var(--card);color:var(--ink);border-radius:30px;padding:24px;box-shadow:0 14px 36px #0006}
+.sl{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}
+.sl button,.btn{flex:none;font:600 13.5px "Be Vietnam Pro";border:2px solid var(--line);background:#fff;color:var(--ink);padding:4px 14px;border-radius:20px;cursor:pointer;transition:.2s}
+.sl button:hover,.btn:hover{border-color:var(--S);transform:translateY(-2px)}
+.sl button.on,.btn.on{background:var(--S);border-color:var(--S);color:#fff}
+.sc{margin:20px 0 10px;text-align:center;font:600 clamp(22px,4.6vw,34px)/2.2 "Be Vietnam Pro"}
+.sc .ch{padding:2px 14px;border-radius:14px;cursor:pointer;transition:.25s;margin:4px;box-shadow:0 3px 0 #0003}
+.sc .ch:hover{transform:translateY(-3px)}
+.sc .ch.h{background:#cfdcc0;color:#123524}
+.sc .ch.sel{outline:3px solid var(--gold);outline-offset:2px}
+.sc .ch.bad{animation:sk .4s}
+@keyframes sk{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+.stc{text-align:center;font:800 15px "Be Vietnam Pro";color:var(--S);min-height:24px}
+.pk{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;min-height:44px;margin:8px 0}
+.pk button{border:0;color:#fff;font:800 14px "Be Vietnam Pro";padding:5px 16px;border-radius:20px;cursor:pointer;transition:.2s}
+.pk button:hover{transform:scale(1.1)}
+.info{background:#fff;border-radius:16px;border-left:6px solid var(--S);padding:10px 16px;font-size:14.5px;min-height:54px}
+.ctl{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;align-items:center}
+/* quiz */
+.q{background:var(--card);color:var(--ink);border-radius:26px;padding:20px 24px;margin-bottom:16px;box-shadow:0 12px 30px #0005;border-left:8px solid var(--gold);transition:border-color .3s}
+.q.ok2{border-left-color:var(--ok)}.q.no2{border-left-color:var(--no)}
+.qn{display:inline-block;background:var(--S);color:#fff;font:800 13px "Be Vietnam Pro";padding:0 14px;border-radius:20px;margin-bottom:4px}
+.q p.t{font:600 18px/1.55 "Be Vietnam Pro";margin-bottom:12px}
+.op{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.op{grid-template-columns:1fr}}
+.op button{display:flex;gap:10px;align-items:center;font:500 16px "Be Vietnam Pro";text-align:left;padding:9px 14px;border-radius:16px;border:2px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:.2s}
+.op button b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--line);display:grid;place-items:center;font:800 13px "Be Vietnam Pro"}
+.op button:hover:not(:disabled){border-color:var(--S);transform:translateY(-2px)}
+.op button:disabled{cursor:default}
+.op .c{background:var(--ok);border-color:var(--ok);color:#fff}.op .c b{background:#fff;color:var(--ok)}
+.op .x{background:var(--no);border-color:var(--no);color:#fff;animation:sk .4s}.op .x b{background:#fff;color:var(--no)}
+.fb{margin-top:12px;padding:12px 16px;border-radius:16px;font-size:15px;border-left:5px solid;animation:up .45s}
+.fb.ok{background:var(--okb);border-color:var(--ok)}.fb.no{background:var(--nob);border-color:var(--no)}
+@keyframes up{from{opacity:0;transform:translateY(10px)}}
+#res{text-align:center;background:linear-gradient(160deg,#4fb84a,#1f6b3a);color:#fff;border-radius:32px;padding:36px 20px;margin-top:40px;box-shadow:0 16px 40px #0007}
+#res h2{font-size:30px}#res .big{font:800 clamp(52px,14vw,92px)/1.1 "Be Vietnam Pro";color:var(--gold)}
+#res .btn{background:transparent;color:#fff;border-color:#fff;margin:4px}#res .btn:hover{background:#fff;color:#1f6b3a}
+#wl{font-size:14px;margin:8px 0}#wl a{color:var(--gold);margin:0 4px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="top"><div class="tb"><span>🍃 Cấu trúc câu</span><div class="pg"><i id="pg"></i></div><span id="st">0/15</span><span class="o" id="so">✔ 0</span><span class="w" id="sw">✘ 0</span><button id="snd" aria-label="Âm thanh">🔊</button></div></div>
+
+<header>
+  <div class="rays"></div>
+  <svg class="leaf" style="left:-6%" viewBox="0 0 600 260"><path d="M0 200C40 40 300 -10 520 70C420 170 200 230 0 200Z" fill="#8bd04a"/><path d="M10 190C150 120 330 80 500 70" stroke="#5fa32f" stroke-width="3" fill="none"/><path d="M0 200C40 40 300 -10 520 70" stroke="#d8f08a" stroke-width="4" fill="none" opacity=".6"/></svg>
+  <svg class="leaf" style="left:36%;animation-delay:-3s;width:min(680px,100vw)" viewBox="0 0 600 260"><path d="M30 20C150 -30 480 -10 600 100C500 220 200 250 30 20Z" fill="#3fa34d"/><path d="M40 30C200 90 400 130 590 105" stroke="#2a7d3a" stroke-width="3" fill="none"/><path d="M30 20C150 -30 480 -10 600 100" stroke="#a9e06a" stroke-width="4" fill="none" opacity=".7"/></svg>
+  <svg class="bf" viewBox="0 0 40 40"><path d="M20 20C6 4 0 18 8 26C12 30 18 26 20 20C22 26 28 30 32 26C40 18 34 4 20 20Z" fill="#ffb347"/></svg>
+  <canvas id="ff"></canvas>
+  <div class="hc"><small>CẤU TRÚC CÂU CƠ BẢN TIẾNG ANH</small><h1>Sentence Structure</h1><div class="scr">ngôi nhà nhỏ của ngữ pháp</div><p class="sub">5 thành phần chính, 5 cấu trúc nền tảng, phần phân tích câu tương tác và 15 câu trắc nghiệm có giải thích ngay.</p><button class="go" id="go">Bước vào khu rừng ➔</button></div>
+  <svg class="home" viewBox="0 0 420 330"><defs><radialGradient id="gw"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#ff9f2e"/></radialGradient></defs>
+    <ellipse cx="210" cy="305" rx="230" ry="40" fill="#8ae04a"/><ellipse cx="210" cy="300" rx="190" ry="26" fill="#b6f060" opacity=".7"/>
+    <rect x="260" y="40" width="42" height="120" fill="#a0522d"/><path d="M260 70h42M260 100h42M260 130h42M281 40v120" stroke="#6e341c" stroke-width="2"/>
+    <rect x="70" y="150" width="240" height="150" fill="#3b7f90"/><path d="M90 150v150M115 150v150M140 150v150M165 150v150M190 150v150M215 150v150M240 150v150M265 150v150M290 150v150" stroke="#2e6676" stroke-width="2"/>
+    <path d="M40 160L170 40L330 170L305 180L170 62L60 175Z" fill="#6c7f98"/><path d="M40 160L170 40L330 170" stroke="#9fb2cc" stroke-width="4" fill="none"/>
+    <g class="win"><path d="M96 215a28 28 0 0 1 56 0v34H96z" fill="url(#gw)"/><path d="M124 190v59M96 220h56" stroke="#7a4a1a" stroke-width="3"/><path d="M195 200a24 24 0 0 1 48 0v100h-48z" fill="url(#gw)"/><path d="M219 180v120" stroke="#7a4a1a" stroke-width="3"/><path d="M150 70a14 14 0 0 1 28 0v22h-28z" fill="url(#gw)"/></g>
+    <g id="fl"></g></svg>
+</header>
+
+<main class="wrap">
+<section class="sec" id="p1">
+  <div class="rv"><span class="eb">PHẦN 1</span><h2>Các thành phần chính trong câu</h2><p class="lead">Năm “viên gạch” để xây nên mọi câu tiếng Anh. Mỗi thành phần có một màu riêng, xuyên suốt cả trang.</p></div>
+  <div class="grid" id="comp"></div>
+</section>
+<section class="sec" id="p2">
+  <div class="rv"><span class="eb">PHẦN 2</span><h2>5 cấu trúc câu nền tảng</h2><p class="lead">Từ câu đơn giản nhất đến câu có bổ ngữ cho tân ngữ.</p></div>
+  <div class="grid" id="stru" style="grid-template-columns:1fr"></div>
+</section>
+<section class="sec" id="p3">
+  <div class="rv"><span class="eb">THỰC HÀNH</span><h2>Phân tích câu tương tác</h2><p class="lead">Chọn một câu, bấm vào từng cụm để xem vai trò. Bật “Thử tự đoán” để tự gán nhãn: đúng hay sai đều có âm thanh.</p></div>
+  <div class="xp rv"><div class="sl" id="sl"></div><div class="sc" id="sc"></div><div class="stc" id="stc"></div><div class="pk" id="pk"></div><div class="info" id="info">Bấm vào một cụm từ trong câu để xem vai trò của nó.</div><div class="ctl"><button class="btn" id="gm">🎯 Thử tự đoán</button><span class="mu" id="gs" style="color:#cfe9b8"></span></div></div>
+</section>
+<section class="sec" id="p4">
+  <div class="rv"><span class="eb">PHẦN 3</span><h2>15 câu hỏi lý thuyết trắc nghiệm</h2><p class="lead">Chọn đáp án là có kết quả và giải thích ngay.</p></div>
+  <div id="mq"></div>
+  <div id="res" class="rv"><h2>Kết quả của bạn</h2><div class="big" id="big">0 / 15</div><p id="msg">Hoàn thành cả 15 câu để nhận lời nhắn nhé.</p><div id="wl"></div><button class="btn" id="rw">Làm lại các câu sai</button><button class="btn" onclick="location.reload()">Làm lại tất cả ↺</button></div>
+</section>
+</main>
+
+<script>
+const $=s=>document.querySelector(s);
+let ac,on=true;
+function tone(f,t,d,ty,v,to){const o=ac.createOscillator(),g=ac.createGain();o.type=ty;o.frequency.setValueAtTime(f,t);if(to)o.frequency.exponentialRampToValueAtTime(to,t+d);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.015);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+d+.05)}
+function sfx(ok){if(!on)return;ac=ac||new(window.AudioContext||window.webkitAudioContext)();ac.resume();const t=ac.currentTime;if(ok)[660,880,1175].forEach((f,i)=>tone(f,t+i*.09,.4,"sine",.16));else{tone(300,t,.3,"triangle",.16,190);tone(220,t+.15,.35,"triangle",.14,150)}}
+$("#snd").onclick=()=>{on=!on;$("#snd").textContent=on?"🔊":"🔇"};
+const LB={S:["S","Chủ ngữ (Subject)","Chủ thể thực hiện hành động. Thường đứng đầu câu; là danh từ hoặc đại từ."],V:["V","Động từ (Verb)","Chỉ hành động/trạng thái. Là thành phần BẮT BUỘC phải có trong câu."],O:["O","Tân ngữ (Object)","Đối tượng chịu tác động của hành động. Đứng sau ngoại động từ."],C:["C","Bổ ngữ (Complement)","Bổ sung ý nghĩa cho S hoặc O. Đứng sau động từ nối hoặc O; thường là tính từ/danh từ."],A:["A","Trạng ngữ (Adverbial)","Chỉ thời gian, nơi chốn, nguyên nhân... Có thể lược bỏ."],O1:["O1","Tân ngữ gián tiếp","Chỉ người nhận (me, him, her...)."],O2:["O2","Tân ngữ trực tiếp","Chỉ vật bị tác động (a book...)."]};
+const ch=(t,l)=>`<span class="ch ${l}">${t}</span>`;
+const sen=s=>s.split("|").map(p=>{const[t,l]=p.split(":");return ch(t,l)}).join(" ");
+/* comp */
+const CP=[["S","Subject (Chủ ngữ)","Chủ thể thực hiện hành động. Thường đứng đầu câu. Là danh từ hoặc đại từ.",["The cat:S|is sleeping:V","She:S|loves music:V"]],
+["V","Verb (Động từ)","Chỉ hành động/trạng thái. Là thành phần BẮT BUỘC phải có trong câu.",["He:S|runs:V|every morning:A","They:S|are:V|students:C"]],
+["O","Object (Tân ngữ)","Đối tượng chịu tác động của hành động. Đứng sau ngoại động từ.",["I:S|bought:V|a new car:O","She:S|hit:V|the ball:O"]],
+["C","Complement (Bổ ngữ)","Bổ sung ý nghĩa cho S hoặc O. Đứng sau linking verb hoặc O. Thường là tính từ/danh từ.",["He:S|is:V|handsome:C","They:S|made:V|me:O|happy:C"]],
+["A","Adverbial (Trạng ngữ)","Chỉ thời gian, nơi chốn, nguyên nhân... Có thể lược bỏ.",["I:S|read:V|books:O|every day:A","In the park:A|children:S|play:V"]]];
+$("#comp").innerHTML=CP.map(c=>`<div class="card rv" style="--c:var(--${c[0]})"><h3><span class="tag">${c[0]}</span>${c[1]}</h3><p class="mu">${c[2]}</p>${c[3].map(e=>`<div class="ex">${sen(e)}</div>`).join("")}</div>`).join("");
+/* structures */
+const ST=[["S + V","Chủ ngữ + Động từ","Động từ là <b>Nội động từ (Intransitive verbs)</b>: không cần tân ngữ đi theo sau mà câu vẫn đầy đủ nghĩa.",["Birds:S|fly:V","The baby:S|is crying:V"]],
+["S + V + O","Chủ ngữ + Động từ + Tân ngữ","Động từ là <b>Ngoại động từ (Transitive verbs)</b>: bắt buộc phải có tân ngữ (đối tượng chịu tác động) đi kèm.",["I:S|love:V|my family:O","He:S|drank:V|water:O"]],
+["S + V + C","Chủ ngữ + Động từ + Bổ ngữ","Động từ là <b>Động từ nối (Linking verbs)</b>: to be, seem, look, feel, become... Bổ ngữ có thể là tính từ hoặc danh từ.",["She:S|looks:V|tired:C","He:S|is:V|a doctor:C"]],
+["S + V + O1 + O2","Chủ ngữ + Động từ + 2 Tân ngữ","Có <b>tân ngữ gián tiếp</b> (người nhận) và <b>tân ngữ trực tiếp</b> (vật bị tác động). Động từ: give, send, buy, tell...",["My mother:S|bought:V|me:O1|a book:O2"]],
+["S + V + O + C","Chủ ngữ + Động từ + Tân ngữ + Bổ ngữ","Bổ ngữ làm rõ nghĩa cho <b>Tân ngữ</b>. Các động từ: make, call, name, keep, find, elect...",["The news:S|made:V|him:O|sad:C","We:S|call:V|her:O|Anna:C"]]];
+$("#stru").innerHTML=ST.map((s,i)=>`<div class="card rv" style="--c:${["#3fa34d","#2f93d1","#e5588a","#ef9a2c","#8c6fe0"][i]}"><div class="n"><b class="num">${i+1}</b><div><h3>${s[0]}</h3><div class="mu">${s[1]}</div></div></div><p class="vt">${s[2]}</p>${s[3].map(e=>`<div class="ex">${sen(e)}</div>`).join("")}</div>`).join("");
+/* explorer */
+const XS=["The cat:S|is sleeping:V","She:S|loves:V|music:O","He:S|runs:V|every morning:A","They:S|are:V|students:C","I:S|bought:V|a new car:O","She:S|hit:V|the ball:O","He:S|is:V|handsome:C","They:S|made:V|me:O|happy:C","I:S|read:V|books:O|every day:A","In the park:A|children:S|play:V","Birds:S|fly:V","My mother:S|bought:V|me:O1|a book:O2","We:S|call:V|her:O|Anna:C","The news:S|made:V|him:O|sad:C","He:S|drank:V|water:O","She:S|looks:V|tired:C"];
+let xi=0,guess=false,sel=null,gc=0,gt=0;
+function xr(){const parts=XS[xi].split("|").map(p=>p.split(":"));const has2=parts.some(p=>p[1]=="O1");
+$("#sc").innerHTML=parts.map((p,k)=>`<span class="ch ${guess?"h":p[1]}" data-k="${k}">${p[0]}</span>`).join(" ");
+$("#stc").textContent=guess?"":"Cấu trúc: "+parts.filter(p=>p[1]!="A").map(p=>p[1]=="O1"||p[1]=="O2"?p[1]:p[1]).join(" + ");
+$("#pk").innerHTML="";sel=null;$("#info").style.borderColor="var(--S)";
+document.querySelectorAll("#sl button").forEach((b,i)=>b.classList.toggle("on",i==xi));
+document.querySelectorAll("#sc .ch").forEach(c=>c.onclick=()=>{const p=parts[c.dataset.k];if(!guess){const l=LB[p[1]];$("#info").style.borderColor=`var(--${p[1]})`;$("#info").innerHTML=`<b>“${p[0]}”</b> là <b>${l[0]} – ${l[1]}</b>. ${l[2]}`;return}
+if(!c.classList.contains("h"))return;document.querySelectorAll("#sc .ch").forEach(x=>x.classList.remove("sel"));c.classList.add("sel");sel=[c,p];
+$("#pk").innerHTML=["S","V","O","C","A"].concat(has2?["O1","O2"]:[]).map(l=>`<button class="${l}" data-l="${l}">${l}</button>`).join("");
+$("#pk").querySelectorAll("button").forEach(b=>b.onclick=()=>{const ok=b.dataset.l==sel[1][1];gt++;if(ok){gc++;sel[0].className="ch "+sel[1][1];sel[0].onclick=null;const l=LB[sel[1][1]];$("#info").style.borderColor=`var(--${sel[1][1]})`;$("#info").innerHTML=`✅ <b>Đúng!</b> “${sel[1][0]}” là <b>${l[0]} – ${l[1]}</b>. ${l[2]}`;$("#pk").innerHTML=""}else{sel[0].classList.add("bad");setTimeout(()=>sel[0].classList.remove("bad"),400);$("#info").innerHTML=`❌ Chưa đúng, thử nhãn khác nhé.`}sfx(ok);$("#gs").textContent=`Đoán đúng ${gc}/${gt}`})})}
+XS.forEach((s,i)=>{const b=document.createElement("button");b.textContent=(i+1)+". "+s.split("|").map(p=>p.split(":")[0]).join(" ").slice(0,22);b.onclick=()=>{xi=i;xr()};$("#sl").appendChild(b)});
+$("#gm").onclick=()=>{guess=!guess;$("#gm").classList.toggle("on",guess);$("#gm").textContent=guess?"👀 Hiện nhãn":"🎯 Thử tự đoán";$("#info").textContent=guess?"Bấm vào một cụm, rồi chọn nhãn S / V / O / C / A phù hợp.":"Bấm vào một cụm từ trong câu để xem vai trò của nó.";xr()};
+xr();
+/* quiz */
+const Q=[["Trong ngữ pháp tiếng Anh, ký hiệu “S” viết tắt của từ gì?","State|Subject|Synonym|Sentence",1,"S là ký hiệu của <b>Subject</b> (Chủ ngữ)."],
+["Thành phần nào là BẮT BUỘC phải có để tạo thành một mệnh đề/câu hoàn chỉnh?","Trạng từ|Tân ngữ|Động từ|Bổ ngữ",2,"Một câu hoàn chỉnh bắt buộc phải có <b>Động từ (Verb)</b> để thể hiện hành động hoặc trạng thái."],
+["“Tân ngữ (Object)” có chức năng chính là gì trong câu?","Thực hiện hành động|Nối các vế câu|Chịu tác động của hành động|Chỉ thời gian",2,"Tân ngữ (O) là đối tượng <b>chịu sự tác động</b> của hành động."],
+["Động từ không cần Tân ngữ đi theo sau mà vẫn đủ nghĩa được gọi là gì?","Nội động từ|Ngoại động từ|Động từ nối|Động từ khuyết thiếu",0,"Đó là <b>Nội động từ (Intransitive verb)</b>. VD: sleep, cry, run..."],
+["Cấu trúc câu “They are students” thuộc dạng cấu trúc nào?","S + V + O|S + V|S + V + O + O|S + V + C",3,"“They” (S) + “are” (V, linking verb) + “students” (C, danh từ làm bổ ngữ) → <b>S + V + C</b>."],
+["Sau các Động từ nối (Linking verbs) như: be, seem, look, feel... ta phải dùng thành phần nào?","Tân ngữ trực tiếp|Bổ ngữ|Trạng ngữ chỉ thể cách|Động từ nguyên thể",1,"Sau linking verb bắt buộc là <b>Bổ ngữ (Complement)</b> dưới dạng tính từ hoặc danh từ để làm rõ nghĩa cho chủ ngữ."],
+["Trong câu “He gave me a present”, từ “me” đóng vai trò là gì?","Tân ngữ trực tiếp|Tân ngữ gián tiếp|Bổ ngữ|Chủ ngữ",1,"Trong cấu trúc S+V+O1+O2, tân ngữ chỉ người nhận (“me”) là <b>tân ngữ gián tiếp</b>; tân ngữ chỉ vật là trực tiếp."],
+["Thành phần nào có thể lược bỏ khỏi câu mà cấu trúc ngữ pháp vẫn đúng?","Chủ ngữ (S)|Động từ (V)|Trạng ngữ (A)|Bổ ngữ (C)",2,"<b>Trạng ngữ (A)</b> cung cấp thêm thông tin về thời gian, nơi chốn... nên có thể lược bỏ."],
+["Câu “The sun rises” thuộc cấu trúc nào sau đây?","S + V|S + V + O|S + V + C|S + V + O + C",0,"“The sun” (S) + “rises” (V, nội động từ) → <b>S + V</b>."],
+["Trong cấu trúc S + V + O + C, thành phần C (Bổ ngữ) dùng để bổ nghĩa cho bộ phận nào?","Chủ ngữ (S)|Động từ (V)|Tân ngữ (O)|Trạng ngữ (A)",2,"Trong S + V + O + C, bổ ngữ bổ nghĩa trực tiếp cho <b>Tân ngữ (O)</b>. VD: “makes me happy” → “happy” bổ sung cho “me”."],
+["Xác định cấu trúc của câu: “Reading makes me relaxed”.","S + V + C|S + V + O + O|S + V + O + C|S + V + O",2,"“Reading” (S) + “makes” (V) + “me” (O) + “relaxed” (C) → <b>S + V + O + C</b>."],
+["Bổ ngữ (Complement - C) thường được tạo thành bởi loại từ nào?","Trạng từ|Tính từ hoặc Danh từ|Giới từ|Động từ",1,"Bổ ngữ thường là <b>tính từ</b> (look tired) hoặc <b>danh từ</b> (become a teacher)."],
+["Động từ cần có Tân ngữ theo sau để hoàn thiện nghĩa được gọi là gì?","Nội động từ|Ngoại động từ|Trợ động từ|Động từ khuyết thiếu",1,"<b>Ngoại động từ (Transitive verb)</b> bắt buộc phải có tân ngữ đi kèm. VD: buy (phải là mua cái gì)."],
+["Trong câu “She bought a book yesterday”, từ “yesterday” đóng vai trò gì?","Tân ngữ (O)|Bổ ngữ (C)|Chủ ngữ (S)|Trạng ngữ (A)",3,"“Yesterday” là <b>trạng ngữ chỉ thời gian (Adverbial of time – A)</b>."],
+["Động từ “name, call, elect” thường xuất hiện trong cấu trúc nào?","S + V|S + V + O|S + V + O + C|S + V + C",2,"Các động từ mang nghĩa gọi tên, bầu cử... thường dùng <b>S + V + O + C</b>. VD: We elected him (O) president (C)."]];
+const res=Array(15).fill(null),L="ABCD";
+function card(i){const q=Q[i],o=q[1].split("|");return `<span class="qn">Câu ${i+1}</span><p class="t">${q[0]}</p><div class="op">${o.map((t,j)=>`<button data-j="${j}"${res[i]!==null?" disabled":""}><b>${L[j]}</b>${t}</button>`).join("")}</div><div class="fb" style="display:none"></div>`}
+function bind(i){const el=$("#q"+i),q=Q[i],o=q[1].split("|"),bs=el.querySelectorAll("button"),fb=el.querySelector(".fb");bs.forEach(b=>b.onclick=()=>{const j=+b.dataset.j,ok=j==q[2];res[i]=ok?1:0;bs.forEach(x=>x.disabled=true);bs[q[2]].classList.add("c");if(!ok)b.classList.add("x");el.classList.add(ok?"ok2":"no2");fb.style.display="block";fb.className="fb "+(ok?"ok":"no");fb.innerHTML=(ok?"✅ <b>Chính xác!</b> ":`❌ <b>Chưa đúng.</b> Đáp án đúng là <b>${L[q[2]]}. ${o[q[2]]}</b>. `)+q[3];sfx(ok);upd()})}
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.06});
+Q.forEach((q,i)=>{const d=document.createElement("div");d.className="q rv";d.id="q"+i;d.innerHTML=card(i);$("#mq").appendChild(d);bind(i)});
+function upd(){const a=res.filter(x=>x!==null).length,o=res.filter(x=>x===1).length;$("#pg").style.width=a/15*100+"%";$("#st").textContent=a+"/15";$("#so").textContent="✔ "+o;$("#sw").textContent="✘ "+(a-o);$("#big").textContent=o+" / 15";
+const w=res.map((x,i)=>x===0?i:-1).filter(i=>i>=0);$("#wl").innerHTML=w.length?"Câu cần xem lại:"+w.map(i=>`<a href="#q${i}">${i+1}</a>`).join(" "):"";
+if(a==15){const p=o/15;$("#msg").textContent=p>=.9?"Xuất sắc! Bạn nắm chắc cấu trúc câu.":p>=.7?"Khá tốt! Xem lại vài câu sai rồi thử lại nhé.":"Cố lên! Đọc lại 5 cấu trúc nền tảng rồi làm lại nha.";$("#res").scrollIntoView({block:"center"})}else $("#msg").textContent="Hoàn thành cả 15 câu để nhận lời nhắn nhé."}
+$("#rw").onclick=()=>{const w=res.map((x,i)=>x===0?i:-1).filter(i=>i>=0);if(!w.length)return;w.forEach(i=>{res[i]=null;const el=$("#q"+i);el.className="q rv on";el.innerHTML=card(i);bind(i)});upd();$("#q"+w[0]).scrollIntoView({block:"center"})};
+/* fx */
+$("#go").onclick=()=>$("#p1").scrollIntoView();
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+addEventListener("scroll",()=>$("#top").classList.toggle("on",scrollY>innerHeight*.8));
+(function(){let s="";const c=["#5aa0ff","#ff8fb8","#c9a8ff","#fff7a8"];for(let i=0;i<46;i++){const x=20+Math.random()*380,y=282+Math.random()*34;s+=`<circle cx="${x}" cy="${y}" r="${2+Math.random()*3}" fill="${c[i%4]}"/>`}$("#fl").innerHTML=s})();
+const cv=$("#ff"),x=cv.getContext("2d");let F=[];
+function rs(){cv.width=cv.offsetWidth;cv.height=cv.offsetHeight;F=Array.from({length:40},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*2+1,p:Math.random()*6,s:Math.random()*.3+.1}))}rs();addEventListener("resize",rs);
+(function d(t){x.clearRect(0,0,cv.width,cv.height);F.forEach(f=>{f.y-=f.s;f.x+=Math.sin(t/900+f.p)*.4;if(f.y<-8)f.y=cv.height+8;x.globalAlpha=.3+.7*Math.abs(Math.sin(t/700+f.p));x.shadowBlur=14;x.shadowColor="#f6e46a";x.fillStyle="#fff7a8";x.beginPath();x.arc(f.x,f.y,f.r,0,7);x.fill()});requestAnimationFrame(d)})(0);
+</script>
+</body>
+</html>
